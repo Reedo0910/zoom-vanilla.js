@@ -1,47 +1,20 @@
-# zoom-vanilla.js [![npm version](https://badge.fury.io/js/zoom-vanilla.js.svg)](https://www.npmjs.com/package/zoom-vanilla.js)
-
-```
-                                                  _ _ _         _     
-                                                 (_) | |       (_)    
-  _______   ___  _ __ ___ ________   ____ _ _ __  _| | | __ _   _ ___ 
- |_  / _ \ / _ \| '_ ` _ \______\ \ / / _` | '_ \| | | |/ _` | | / __|
-  / / (_) | (_) | | | | | |      \ V / (_| | | | | | | | (_| |_| \__ \
- /___\___/ \___/|_| |_| |_|       \_/ \__,_|_| |_|_|_|_|\__,_(_) |___/
-                                                              _/ |    
-                                                             |__/     
-```
-
-**Live demo**: [zoom-vanilla.js in action][live demo].
+# zoom-vanilla.js (no offset on the enlarged images)
 
 A simple library for image zooming; [as seen on Medium][medium-zoom-article].
-It zooms in really smoothly, and zooms out when you click again, scroll away,
+It zooms in really smoothly and zooms out when you click again, scroll away,
 or press the <kbd>esc</kbd> key.
 
 If you hold the <kbd>⌘</kbd> or <kbd>Ctrl</kbd> key when clicking the image, it
 will open the image in a new tab instead of zooming it.
 
-_This is a fork of the [jQuery plugin by fat][fat-zoom]_. These are the key
+_This is a fork of the [zoom-vanilla.js][zoom-vanilla]_. Please refer to the original doc and repo for demos and more details. These are the key
 differences:
 
-1. **No jQuery dependency**; vanilla JavaScript only
-2. ~Equivalent~smaller file size (the minified version is slightly smaller due
-   to better minification)
-3. Includes bug fixes not present in [fat/zoom.js][fat-zoom], which is no
-   longer being maintained
+1. No offset on the enlarged images.
 
 ## Installation
 
-1. Download the JS and CSS files using any of the following methods:    
-
-    - npm: `npm i zoom-vanilla.js`. This will download the the necessary
-	  files to the `node_modules/zoom-vanilla.js/dist/` directory.
-
-    - Directly link to the files hosted on a CDN:
-    
-		- JS:
-		  https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom-vanilla.min.js
-        
-        - CSS: https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom.css
+1. Download the JS and CSS files by:    
     
 	- Manually download `dist/zoom-vanilla.min.js` and `dist/zoom.css` from
 	  GitHub
@@ -59,8 +32,8 @@ differences:
     You can also `import` them if you're using webpack:
 
     ```javascript
-    import "zoom-vanilla.js/dist/zoom.css"
-    import "zoom-vanilla.js/dist/zoom-vanilla.min.js"
+    import "path/to/dist/zoom.css"
+    import "path/to/dist/zoom-vanilla.min.js"
     ```
 
 ## Usage
@@ -78,7 +51,7 @@ zoom-vanilla.js should (in theory) work in all modern browsers. If not, create
 an issue! Thanks!
 
 [medium-zoom-article]: https://medium.com/designing-medium/image-zoom-on-medium-24d146fc0c20
-[fat-zoom]: https://github.com/fat/zoom.js
+[zoom-vanilla]: https://github.com/spinningarrow/zoom-vanilla.js
 
 ## Known issues
 
@@ -95,5 +68,3 @@ an issue! Thanks!
 - `npm run build` to build the minified JS and vendor-prefixed CSS
 - `npm run watch` to rebuild when any JS files change (recommended for
   development)
-
-[live demo]: http://code.sahil.me/zoom-vanilla.js
