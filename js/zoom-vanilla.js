@@ -1,5 +1,5 @@
 +function () { "use strict";
-	var OFFSET = 80
+	var OFFSET = 0
 
 	// From http://youmightnotneedjquery.com/#offset
 	function offset(element) {
